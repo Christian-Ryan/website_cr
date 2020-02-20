@@ -47,6 +47,9 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   mediaType = "application/manifest+json"
   rel = "manifest"
 
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
@@ -69,3 +72,6 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
+  
+# google
+  googleAnalytics = "UA-149160448-2"
