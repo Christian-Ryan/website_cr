@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
 title = "Skills"
-subtitle = ""
+subtitle = "Possibly..."
 
 # Showcase personal skills or business features.
 # 
@@ -18,18 +18,18 @@ subtitle = ""
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  description = "90%"
+  description = "12%"
   
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
   name = "Statistics"
-  description = "100%"  
+  description = "101%"  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "surprise"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Emotion Recognition"
+  description = "50%"
 
 +++
