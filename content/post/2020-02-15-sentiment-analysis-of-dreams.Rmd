@@ -26,7 +26,7 @@ library(png)
 In the last post we compared the dream sets by graphing the most frequently occurring words and calculating correlation coefficients. But in psychology, we are often interested in specific aspects of the text to analyse. From my own perspective, emotional language use is of particular interest. A further way in which we could compare the dreams is by carrying out a sentiment analysis. One could use bespoke software such as the LIWC programme (http://liwc.wpengine.com) in this scenario, but the tidytext approach allows for more flexibility, even if the dictionaries are not as well validated as LIWC.
 
 ```{r echo=FALSE, out.width="45%"}
-include_graphics('/static/img/LIWC.png')
+include_graphics('./img/LIWC.png')
 ```
 
 There used to be three sentiment dictionaries included in the **tidytext** package and the current version of **Text mining with R** (https://www.tidytextmining.com) describes them this way. However, some changes have happened to the package, and now it comes with only the Bing set preloaded. To access the other lexicons, we need to install the **textdata** package.
