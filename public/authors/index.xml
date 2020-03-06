@@ -5,21 +5,12 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Authors</title>
       <link>/authors/</link>
     </image>
-    
-    <item>
-      <title></title>
-      <link>/authors/admin/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/admin/</guid>
-      <description>&lt;p&gt;I am a Senior Lecturer in Clinical Psychology at the School of Applied Psychology in University College Cork and a Clinical Psychologist in private practice. I am involved in all aspects of the doctoral programme in Clinical Psychology including teaching, research, selection and placement visits. I have specific responsibilities for  placement coordinator and lead the modules on Intellectual disabilities and Autism. I also contribute to the MA programme in Mental Health and supervise students for MA research projects. Since moving to the university in August 2017 I have started learning R as a tool for research, statistical analysis and text mining. I am still a novice, and my blog posts below are an attempt to explore some of the ways in which R can be used. Feel free to message me if you have ideas to improve the code or have other comments or feedback.&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Brendan O&#39;Flynn</title>
@@ -123,6 +114,15 @@
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
       <guid>/authors/caitriona-ni-charragain/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;I am a Senior Lecturer in Clinical Psychology at the School of Applied Psychology in University College Cork and a Clinical Psychologist in private practice. I am involved in all aspects of the doctoral programme in Clinical Psychology including teaching, research, selection and placement visits. I have specific responsibilities for  placement coordinator and lead the modules on Intellectual disabilities and Autism. I also contribute to the MA programme in Mental Health and supervise students for MA research projects. Since moving to the university in August 2017 I have started learning R as a tool for research, statistical analysis and text mining. I am still a novice, and my blog posts below are an attempt to explore some of the ways in which R can be used. Feel free to message me if you have ideas to improve the code or have other comments or feedback.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

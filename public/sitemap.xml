@@ -33,28 +33,43 @@
   </url>
   
   <url>
+    <loc>/2020/02/15/sentiment-analysis-of-dreams/</loc>
+    <lastmod>2020-02-15T08:50:04+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-15T08:50:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/07/12/writing-technical-content-in-academic/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <loc>/tags/r/</loc>
+    <lastmod>2020-02-15T08:50:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/admin/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2020-02-15T08:50:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <loc>/2020/01/27/using-tidytext-to-compare-samples-of-dreams/</loc>
+    <lastmod>2020-01-27T16:24:06+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/02/05/display-jupyter-notebooks-with-academic/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <loc>/2020/01/14/manipulating-text-data-from-dreams/</loc>
+    <lastmod>2020-01-14T10:12:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2019/11/30/pulling-text-data-from-the-internet/</loc>
+    <lastmod>2019-11-30T09:38:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2019/10/12/plotting-multiple-histograms-on-the-same-graph/</loc>
+    <lastmod>2019-10-12T09:49:42+01:00</lastmod>
   </url>
   
   <url>
@@ -84,6 +99,11 @@
   
   <url>
     <loc>/publication/2018-01-01_a_review_of_we/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -178,31 +198,6 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/academic/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2016/04/20/academic-the-website-builder-for-hugo/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/demo/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/2016-01-01_judgments_of_nonve/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -233,31 +228,6 @@
   </url>
   
   <url>
-    <loc>/2015/07/23/hello-r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/plot/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/authors/caitriona-ni-charragain/</loc>
     <lastmod>2010-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -275,6 +245,14 @@
   <url>
     <loc>/publication/2004-01-01_differences_in_the_a/</loc>
     <lastmod>2004-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/admin/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
   </url>
   
   <url>
