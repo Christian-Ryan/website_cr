@@ -657,16 +657,16 @@ library(car)</code></pre>
 <pre><code>## # A tibble: 10 x 2
 ##    word        value
 ##    &lt;chr&gt;       &lt;dbl&gt;
-##  1 bliss           3
-##  2 eager           2
-##  3 enslave        -2
-##  4 fulfilled       2
-##  5 humiliation    -3
-##  6 optimism        2
-##  7 somber         -2
-##  8 stabbed        -2
-##  9 twat           -5
-## 10 warnings       -3</code></pre>
+##  1 agonises       -3
+##  2 betray         -3
+##  3 bother         -2
+##  4 cancelling     -1
+##  5 emergency      -2
+##  6 impressive      3
+##  7 lagged         -2
+##  8 scandal        -3
+##  9 smiles          2
+## 10 unconcerned    -2</code></pre>
 <p>Here we see the various ratings given for the valence of each word regarded as having sentiment. This is scored on a scale from -5 to +5.</p>
 <div id="merging-sentiment-with-dream-dataset-via-inner_join" class="section level2">
 <h2>Merging sentiment with dream dataset via inner_join()</h2>
@@ -1083,7 +1083,7 @@ ggplot(aes(y = abs(negative), x = sample))+
   geom_boxplot()+
   ylab(&quot;Number of words per dream&quot;)</code></pre>
 <p><img src="/post/2020-02-15-sentiment-analysis-of-dreams_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
-<p>This does appear to be the case. This shows how important controlling for word length could be in comparing texts. However, the <em>sentiment per word</em> needs to be treated with some caution. For instance, we still might want to know why some people express both more words and more emotion, rather than less words and less emotion. Looking at the last boxplot for instance, could make you wonder, why do the college women appear to use less words to describe their dreams that the hall females? However, investigating questions such as these is beyond the scope of this post.</p>
+<p>This does appear to be the case. This shows how important controlling for word count could be in comparing texts. However, the <em>sentiment per word</em> needs to be treated with some caution. For instance, we still might want to know why some people express both more words and more emotion, rather than less words and less emotion. Looking at the last boxplot for instance, could make you wonder, why do the college women appear to use less words to describe their dreams that the hall females? However, investigating questions such as these is beyond the scope of this post.</p>
 </div>
 
     </div>

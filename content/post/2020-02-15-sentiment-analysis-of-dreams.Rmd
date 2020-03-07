@@ -353,7 +353,7 @@ df_sentiment %>%
   ylab("Number of words per dream")
 ```
 
-This does appear to be the case. This shows how important controlling for word length could be in comparing texts. However, the *sentiment per word* needs to be treated with some caution. For instance, we still might want to know why some people express both more words and more emotion, rather than less words and less emotion. Looking at the last boxplot for instance, could make you wonder, why do the college women appear to use less words to describe their dreams that the hall females? However, investigating questions such as these is beyond the scope of this post.
+This does appear to be the case. This shows how important controlling for word count could be in comparing texts. However, the *sentiment per word* needs to be treated with some caution. For instance, we still might want to know why some people express both more words and more emotion, rather than less words and less emotion. Looking at the last boxplot for instance, could make you wonder, why do the college women appear to use less words to describe their dreams that the hall females? However, investigating questions such as these is beyond the scope of this post.
 
 
 
