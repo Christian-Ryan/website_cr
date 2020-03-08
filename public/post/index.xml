@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts | Christian Ryan</title>
+    <title>Posts on Christian Ryan</title>
     <link>/post/</link>
-      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
-      <title>Posts</title>
-      <link>/post/</link>
-    </image>
+    <description>Recent content in Posts on Christian Ryan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>2.4 - Sentiment analysis of dreams</title>
       <link>/2020/02/15/sentiment-analysis-of-dreams/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
       <guid>/2020/02/15/sentiment-analysis-of-dreams/</guid>
       <description>
 
@@ -36,18 +36,18 @@ library(car)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We can have a quick view of the lexicon by using the &lt;em&gt;some()&lt;/em&gt; function from the &lt;strong&gt;car&lt;/strong&gt; package.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;some(afinn)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 10 x 2
-##    word          value
-##    &amp;lt;chr&amp;gt;         &amp;lt;dbl&amp;gt;
-##  1 brilliant         4
-##  2 chic              2
-##  3 demands          -1
-##  4 dispute          -2
-##  5 insensitivity    -2
-##  6 melancholy       -2
-##  7 motivate          1
-##  8 shame            -2
-##  9 unhealthy        -2
-## 10 yucky            -2&lt;/code&gt;&lt;/pre&gt;
+##    word     value
+##    &amp;lt;chr&amp;gt;    &amp;lt;dbl&amp;gt;
+##  1 condemns    -2
+##  2 ensuring     1
+##  3 fire        -2
+##  4 guilt       -3
+##  5 messed      -2
+##  6 mistake     -2
+##  7 negative    -2
+##  8 neglects    -2
+##  9 powerful     2
+## 10 rage        -2&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here we see the various ratings given for the valence of each word regarded as having sentiment. This is scored on a scale from -5 to +5.&lt;/p&gt;
 &lt;div id=&#34;merging-sentiment-with-dream-dataset-via-inner_join&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Merging sentiment with dream dataset via inner_join()&lt;/h2&gt;
@@ -473,6 +473,7 @@ ggplot(aes(y = abs(negative), x = sample))+
       <title>2.3 - Using tidytext to compare samples of dreams</title>
       <link>/2020/01/27/using-tidytext-to-compare-samples-of-dreams/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
       <guid>/2020/01/27/using-tidytext-to-compare-samples-of-dreams/</guid>
       <description>
 
@@ -510,18 +511,18 @@ library(car)&lt;/code&gt;&lt;/pre&gt;
   filter(!is.na(college_women) &amp;amp; !is.na(hall_female) &amp;amp; !is.na(hall_male) &amp;amp; !is.na(vietnam_vet)) %&amp;gt;%
   some()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 10 x 5
-##    word    college_women hall_female hall_male vietnam_vet
-##    &amp;lt;chr&amp;gt;           &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt;
-##  1 alarm            0.09        0.02      0.02        0.02
-##  2 collar           0.06        0.02      0.02        0.02
-##  3 door             0.18        0.52      0.23        0.35
-##  4 hours            0.15        0.02      0.05        0.03
-##  5 meet             0.09        0.02      0.05        0.24
-##  6 met              0.06        0.2       0.09        0.06
-##  7 narrow           0.09        0.02      0.02        0.14
-##  8 run              0.15        0.02      0.28        0.11
-##  9 telling          0.09        0.07      0.12        0.03
-## 10 white            0.15        0.25      0.14        0.43&lt;/code&gt;&lt;/pre&gt;
+##    word     college_women hall_female hall_male vietnam_vet
+##    &amp;lt;chr&amp;gt;            &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt;
+##  1 boy               0.4         0.61      0.19        0.08
+##  2 cover             0.03        0.05      0.02        0.03
+##  3 fellow            0.12        0.12      0.12        0.02
+##  4 hall              0.18        0.27      0.12        0.03
+##  5 hand              0.18        0.12      0.19        0.25
+##  6 hold              0.03        0.05      0.07        0.08
+##  7 riding            0.34        0.12      0.05        0.03
+##  8 staying           0.06        0.1       0.02        0.05
+##  9 suddenly          0.37        0.44      0.4         0.14
+## 10 true              0.06        0.02      0.02        0.02&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Then the next step is to decide which sample is going to be our reference sample. This will have its column of frequencies replicated and stacked so that each of the other samples can be compared with it. When we &lt;em&gt;gather()&lt;/em&gt;, we only include the samples to compare with the reference and not the reference itself. For simplicity, we can use the first column in our df (college_women) as our reference group and compare the other three samples to this. We might predict at this point that the hall_women will have the most similar dreams and then the hall_men, with the vietnam_vet being the most different. We can check this prediction later on when we run some correlation coefficients.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df_gather &amp;lt;- df_spread %&amp;gt;%
   gather(sample, proportion, hall_female:vietnam_vet)&lt;/code&gt;&lt;/pre&gt;
@@ -632,6 +633,7 @@ cor.test(df_cwhf$college_women, df_cwhf$proportion)&lt;/code&gt;&lt;/pre&gt;
       <title>2.2 - Manipulating text data from dreams</title>
       <link>/2020/01/14/manipulating-text-data-from-dreams/</link>
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
       <guid>/2020/01/14/manipulating-text-data-from-dreams/</guid>
       <description>
 
@@ -660,16 +662,16 @@ df$sample &amp;lt;- as.factor(df$sample)&lt;/code&gt;&lt;/pre&gt;
 car::some(df) %&amp;gt;%
   custom_view()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##           sample                                                    dream
-## 1  college_women It was raining in my dream and I was coming out of the h
-## 2  college_women I dreamed about my first boyfriend whom I had gone with 
-## 3    vietnam_vet I&amp;#39;m part of a bomber crew flying over a European or Balk
-## 4    vietnam_vet I&amp;#39;m young, attending a party. An attractive woman is sta
-## 5      hall_male I was on a Mayfield streetcar, going to school. It was m
-## 6      hall_male I was sitting in a drug store eating a sundae with a bun
-## 7      hall_male I dreamed that two people I didn&amp;#39;t know and myself went 
-## 8    hall_female I dreamed I was sitting in my room at my desk. The room 
-## 9    hall_female I dreamt that a friend of mine who graduated last year c
-## 10   hall_female In my dream I was in bed aware of the fact that I was ab&lt;/code&gt;&lt;/pre&gt;
+## 1  college_women My friend (age 23-male), my mother (age 45), my sister (
+## 2    vietnam_vet I&amp;#39;m in a room with other Vietnam vets. We&amp;#39;re young, in o
+## 3    vietnam_vet It&amp;#39;s windy. I&amp;#39;m climbing in an open pit mine of gray whi
+## 4    vietnam_vet Seated in a small but comfortable hotel room, I&amp;#39;m watchi
+## 5      hall_male I was eating in a corner cafeteria when I happened to re
+## 6      hall_male I was seated at a card table playing poker with three ot
+## 7    hall_female I was in a car with a date unknown to me, but I have a s
+## 8    hall_female I dreamed that I was a small child, staying at the home 
+## 9    hall_female This dream was completely confusing and uncorrelated. On
+## 10   hall_female I dreamt that a fellow I know came to the house and we w&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-01-14-manipulating-text-data-from-dreams_files/tidytext.png&#34; style=&#34;width:35.0%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Julia Silge and David Robinson’s book &lt;strong&gt;Text Mining with R - A tidy approach&lt;/strong&gt; sets off at a cracking pace, at least for relatively newbies to R such as myself. They assumes a degree of familiarity with tidyverse concepts and when they introduce concepts such as tidytext format, they can sometimes address three or four steps in one example. I will unpack some of these as individual steps to illustrate what is going on, while using our dream data as the material for processing.&lt;/p&gt;
 &lt;p&gt;At the moment our df only contains the sample name (a categorical variable with four values) and the text of the dream. It might be helpful to index the dreams before we tokenise the text in them. So let’s introduce a new variable that we will call dream_number. This will index each dream between 1 - 400 in the dataframe.&lt;/p&gt;
@@ -920,6 +922,7 @@ plot(dream_lengths, xlab = &amp;quot;Dream Number&amp;quot;)&lt;/code&gt;&lt;/pr
       <title>2.1 - Pulling text data from the internet</title>
       <link>/2019/11/30/pulling-text-data-from-the-internet/</link>
       <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
+      
       <guid>/2019/11/30/pulling-text-data-from-the-internet/</guid>
       <description>
 
@@ -1047,6 +1050,7 @@ df$dream &amp;lt;- substr(df$dream, 0, start-2) &lt;/code&gt;&lt;/pre&gt;
       <title>1 - Plotting multiple histograms on the same graph</title>
       <link>/2019/10/12/plotting-multiple-histograms-on-the-same-graph/</link>
       <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
+      
       <guid>/2019/10/12/plotting-multiple-histograms-on-the-same-graph/</guid>
       <description>
 
