@@ -36,18 +36,18 @@ library(car)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We can have a quick view of the lexicon by using the &lt;em&gt;some()&lt;/em&gt; function from the &lt;strong&gt;car&lt;/strong&gt; package.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;some(afinn)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 10 x 2
-##    word           value
-##    &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;
-##  1 doubts            -1
-##  2 endorses           2
-##  3 favored            2
-##  4 foolish           -2
-##  5 haplessness       -2
-##  6 irritated         -3
-##  7 misinformation    -2
-##  8 sulky             -2
-##  9 thwarts           -2
-## 10 warm               1&lt;/code&gt;&lt;/pre&gt;
+##    word          value
+##    &amp;lt;chr&amp;gt;         &amp;lt;dbl&amp;gt;
+##  1 beautify          3
+##  2 disparaging      -2
+##  3 funnier           4
+##  4 inhibit          -1
+##  5 justified         2
+##  6 meditative        1
+##  7 short-sighted    -2
+##  8 struggles        -2
+##  9 swindling        -3
+## 10 treason          -3&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here we see the various ratings given for the valence of each word regarded as having sentiment. This is scored on a scale from -5 to +5.&lt;/p&gt;
 &lt;div id=&#34;merging-sentiment-with-dream-dataset-via-inner_join&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Merging sentiment with dream dataset via inner_join()&lt;/h2&gt;
@@ -510,18 +510,18 @@ library(car)&lt;/code&gt;&lt;/pre&gt;
   filter(!is.na(college_women) &amp;amp; !is.na(hall_female) &amp;amp; !is.na(hall_male) &amp;amp; !is.na(vietnam_vet)) %&amp;gt;%
   some()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 10 x 5
-##    word      college_women hall_female hall_male vietnam_vet
-##    &amp;lt;chr&amp;gt;             &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt;
-##  1 beautiful          0.12       0.290      0.02        0.14
-##  2 carried            0.09       0.05       0.02        0.02
-##  3 crowd              0.06       0.1        0.09        0.03
-##  4 familiar           0.03       0.05       0.05        0.03
-##  5 fire               0.06       0.05       0.02        0.08
-##  6 hurt               0.03       0.07       0.09        0.08
-##  7 lot                0.06       0.17       0.14        0.08
-##  8 sidewalk           0.03       0.1        0.02        0.03
-##  9 staying            0.06       0.1        0.02        0.05
-## 10 taking             0.09       0.05       0.09        0.09&lt;/code&gt;&lt;/pre&gt;
+##    word        college_women hall_female hall_male vietnam_vet
+##    &amp;lt;chr&amp;gt;               &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt;
+##  1 bed                  0.15        0.27      0.19        0.32
+##  2 cold                 0.03        0.12      0.02        0.03
+##  3 finally              0.27        0.27      0.33        0.11
+##  4 immediately          0.06        0.07      0.12        0.08
+##  5 neck                 0.03        0.05      0.09        0.08
+##  6 ran                  0.34        0.39      0.33        0.02
+##  7 set                  0.06        0.05      0.05        0.13
+##  8 steps                0.03        0.07      0.02        0.09
+##  9 test                 0.21        0.2       0.12        0.02
+## 10 watching             0.24        0.02      0.09        0.02&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Then the next step is to decide which sample is going to be our reference sample. This will have its column of frequencies replicated and stacked so that each of the other samples can be compared with it. When we &lt;em&gt;gather()&lt;/em&gt;, we only include the samples to compare with the reference and not the reference itself. For simplicity, we can use the first column in our df (college_women) as our reference group and compare the other three samples to this. We might predict at this point that the hall_women will have the most similar dreams and then the hall_men, with the vietnam_vet being the most different. We can check this prediction later on when we run some correlation coefficients.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df_gather &amp;lt;- df_spread %&amp;gt;%
   gather(sample, proportion, hall_female:vietnam_vet)&lt;/code&gt;&lt;/pre&gt;
@@ -660,16 +660,16 @@ df$sample &amp;lt;- as.factor(df$sample)&lt;/code&gt;&lt;/pre&gt;
 car::some(df) %&amp;gt;%
   custom_view()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##           sample                                                    dream
-## 1  college_women I dreamed I was driving down town to get a book I had le
-## 2  college_women I was walking up my street when I heard the wild barking
-## 3  college_women I was with my sister, Elizabeth. We went on a train ride
-## 4    hall_female I dreamt that a friend of mine who graduated last year c
-## 5    hall_female I dreamed that Dean Dolan was explaining the constructio
-## 6    hall_female I went into the reserve bookstore to buy some green-line
-## 7    hall_female I was driving home from the show alone, and I was at Ric
-## 8    hall_female My parents took in a male boarder, and we were attracted
-## 9    hall_female This dream took place entirely in one room and instead o
-## 10   hall_female I dreamt that a fellow I know came to the house and we w&lt;/code&gt;&lt;/pre&gt;
+## 1  college_women This dream took place in a large room which is unfamilia
+## 2  college_women I dreamt that I was to attend a Spanish class at 7:30 at
+## 3  college_women I dreamt that I was walking to a class through M-- arch 
+## 4    vietnam_vet I&amp;#39;m living with roommates in the basement of a house sim
+## 5    vietnam_vet I&amp;#39;m in a room where many young people lie asleep on beds
+## 6    vietnam_vet At night, I&amp;#39;m on a large base in a mountainous country. 
+## 7    vietnam_vet In Vietnam, years after the war has ended, another man a
+## 8    vietnam_vet I enter the second floor of Dave B&amp;#39;s apartment. Among th
+## 9      hall_male I was in a gym, running around and jumping. Suddenly I r
+## 10     hall_male In this dream my wife and I were driving along a country&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-01-14-manipulating-text-data-from-dreams_files/tidytext.png&#34; style=&#34;width:35.0%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Julia Silge and David Robinson’s book &lt;strong&gt;Text Mining with R - A tidy approach&lt;/strong&gt; sets off at a cracking pace, at least for relatively newbies to R such as myself. They assumes a degree of familiarity with tidyverse concepts and when they introduce concepts such as tidytext format, they can sometimes address three or four steps in one example. I will unpack some of these as individual steps to illustrate what is going on, while using our dream data as the material for processing.&lt;/p&gt;
 &lt;p&gt;At the moment our df only contains the sample name (a categorical variable with four values) and the text of the dream. It might be helpful to index the dreams before we tokenise the text in them. So let’s introduce a new variable that we will call dream_number. This will index each dream between 1 - 400 in the dataframe.&lt;/p&gt;
