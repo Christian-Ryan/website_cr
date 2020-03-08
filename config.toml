@@ -49,6 +49,13 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
+  
+[author]
+    name = "Christian Ryan"
+
+[outputFormats]
+    [outputFormats.RSS]
+        baseName = "rss"
 
 [markup]
   defaultMarkdownHandler = "goldmark"
