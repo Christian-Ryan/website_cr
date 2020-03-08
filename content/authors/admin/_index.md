@@ -27,7 +27,7 @@ name:  Christian Ryan
 organizations:
 - name: University College Cork
   url: ""
-role: Senior Lecturer in Clinical Psychology & Chartered Clinical Psycholoigst
+role: Senior Lecturer in Clinical Psychology & Chartered Clinical Psychologist
 social:
 - icon: envelope
   icon_pack: fas
