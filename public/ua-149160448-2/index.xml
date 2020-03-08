@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>UA-149160448-2 | Christian Ryan</title>
-    <link>https://drchristianryan.com/ua-149160448-2/</link>
-      <atom:link href="https://drchristianryan.com/ua-149160448-2/index.xml" rel="self" type="application/rss+xml" />
+    <link>/ua-149160448-2/</link>
+      <atom:link href="/ua-149160448-2/index.xml" rel="self" type="application/rss+xml" />
     <description>UA-149160448-2</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>UA-149160448-2</title>
-      <link>https://drchristianryan.com/ua-149160448-2/</link>
+      <link>/ua-149160448-2/</link>
     </image>
     
   </channel>
