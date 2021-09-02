@@ -2,23 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | Christian Ryan</title>
-    <link>/tags/</link>
-      <atom:link href="/tags/rss.xml" rel="self" type="application/rss+xml" />
+    <link>https://drchristianryan.com/tags/</link>
+      <atom:link href="https://drchristianryan.com/tags/rss.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Tags</title>
-      <link>/tags/</link>
+      <link>https://drchristianryan.com/tags/</link>
     </image>
-    
-    <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/r/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
